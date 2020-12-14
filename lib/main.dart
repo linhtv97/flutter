@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_demo/Color.dart';
 import 'package:flutter_app_demo/Counter.dart';
 import 'package:flutter_app_demo/ListPost.dart';
 
@@ -62,6 +63,20 @@ class Home extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => ListPost()));
+                },
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(16.0),
+              child: MaterialButton(
+                textColor: Colors.green,
+                child: Text('Color Change'),
+                color: Colors.orange,
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Color()));
                 },
               ),
             )

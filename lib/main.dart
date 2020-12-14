@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_demo/BarChart.dart';
 import 'package:flutter_app_demo/Color.dart';
 import 'package:flutter_app_demo/Counter.dart';
 import 'package:flutter_app_demo/ListPost.dart';
+import 'package:flutter_app_demo/RotationAnimation.dart';
 
 void main() {
   runApp(MyApp());
@@ -77,6 +79,34 @@ class Home extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (context) => Color()));
+                },
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(16.0),
+              child: MaterialButton(
+                textColor: Colors.green,
+                child: Text('Rotation Animation'),
+                color: Colors.orange,
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => RotationAnimation()));
+                },
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(16.0),
+              child: MaterialButton(
+                textColor: Colors.green,
+                child: Text('Bar Chart'),
+                color: Colors.orange,
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => BarChart()));
                 },
               ),
             )

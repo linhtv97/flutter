@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/BarChart.dart';
 import 'package:flutter_app_demo/Counter.dart';
+import 'package:flutter_app_demo/Form.dart';
 import 'package:flutter_app_demo/ListPost.dart';
 import 'package:flutter_app_demo/RotationAnimation.dart';
 
@@ -77,6 +78,16 @@ class Home extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) => RotationAnimation()));
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.format_align_center),
+              title: Text('Form'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => FormValidation()));
               },
             )
           ],

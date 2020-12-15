@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_demo/BarChart.dart';
 import 'package:flutter_app_demo/Counter.dart';
+import 'package:flutter_app_demo/Form.dart';
 import 'package:flutter_app_demo/ListPost.dart';
+import 'package:flutter_app_demo/RotationAnimation.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,15 +18,15 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Home(
-        title: "Flutter Seminal",
+        title: "Flutter Seminar",
       ),
     );
   }
 }
 
+
 class Home extends StatelessWidget {
   Home({Key key, this.title}) : super(key: key);
-
   final String title;
 
   @override
@@ -33,40 +36,62 @@ class Home extends StatelessWidget {
         title: Text('$title'),
       ),
       body: Center(
-        child: Column(
+        child: ListView(
           children: [
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: MaterialButton(
-                textColor: Colors.green,
-                child: Text('Counter'),
-                color: Colors.indigoAccent,
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Counter(
-                                title: "Counter",
-                              )));
-                },
-              ),
+            ListTile(
+              leading: Icon(Icons.countertops),
+              title: Text('Counter'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Counter(
+                          title: "Counter",
+                        )));
+              },
             ),
-            Padding(
-              padding: EdgeInsets.all(16.0),
-              child: MaterialButton(
-                textColor: Colors.green,
-                child: Text('Fetching api'),
-                color: Colors.indigoAccent,
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => ListPost()));
-                },
-              ),
+            ListTile(
+              leading: Icon(Icons.api),
+              title: Text('Fetching api'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => ListPost()));
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.bar_chart),
+              title: Text('Bar Chart'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => BarChart()));
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.animation),
+              title: Text('Rotation Animation'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => RotationAnimation()));
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.format_align_center),
+              title: Text('Form'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => FormValidation()));
+              },
             )
           ],
-        ),
+        )
       ),
     );
   }

@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+# Flutter
 
-You can use the [editor on GitHub](https://github.com/linhtv97/flutter_desktop_app/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Flutter project.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Get started with Flutter
+[![Watch the video](https://i.imgur.com/H5SyZZu.png)](https://www.youtube.com/watch?v=fq4N0hgOWzU&feature=emb_logo)
 
-### Markdown
+### What **is** Flutter?
+- Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Outstanding Features
+- [Fast Development](https://flutter.dev/docs/development/tools/hot-reload) (Hot reload, ...)
+- [Expressive and Flexible UI](https://flutter.dev/docs/development/ui/widgets) (Material Design, Cupertino,...)
+- Native Performance
 
-```markdown
-Syntax highlighted code block
+### Setup 
+- [Install Fullter in macOS](https://flutter.dev/docs/get-started/install/macos)
+- Introduce flutter doctor
+- Editor: Android Studio, IntelliJ IDEA, Visual Code,...( Android Studio)
+- Install plugins( Dart, Fultter, Dart Helper,..)
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/linhtv97/flutter_desktop_app/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+###
